@@ -39,7 +39,7 @@ export default function Hero({}: Props) {
             <button className="heroButton">Over mij</button>
           </Link>
           <Link href="#experience">
-            <button className="heroButton">Ervaring</button>
+            <button className="heroButton">Loopbaan</button>
           </Link>
           <Link href="#skills">
             <button className="heroButton">Skills</button>
