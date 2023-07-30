@@ -10,7 +10,7 @@ import Contact from "@/components/Contact";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-[rgb(255,255,255)] text-gray-700 h-screen snap-y snap-mandatory overflow-scroll z-0">
+    <div className="bg-[rgb(255,255,255)] text-gray-700 h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-green-600/80">
       <Head>
         <title>Neesha's Portfolio</title>
       </Head>
