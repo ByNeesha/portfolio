@@ -7,6 +7,7 @@ import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -40,6 +41,14 @@ const Home: NextPage = () => {
       <section id="contact" className="snap-start">
         <Contact />
       </section>
+
+      <Link href="#hero">
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="flex item-center justify-center">
+            Terug naar boven
+          </div>
+        </footer>
+      </Link>
     </div>
   );
 };
