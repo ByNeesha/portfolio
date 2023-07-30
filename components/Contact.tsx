@@ -1,17 +1,9 @@
 import React from "react";
 import { MapPinIcon } from "@heroicons/react/24/solid";
-import { useForm, SubmitHandler } from "react-hook-form";
 import emailjs from "emailjs-com";
 import { Form, Input, TextArea, Button } from "semantic-ui-react";
 import Swal from "sweetalert2";
 require("dotenv").config();
-
-type Inputs = {
-  firstName: string;
-  lastName: string;
-  email: string;
-  message: string;
-};
 
 const Contact: React.FC = () => {
   const handleOnSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -91,6 +83,7 @@ const Contact: React.FC = () => {
           </div>
           <Form.Field
             control={Input}
+            type="text"
             name="email"
             placeholder="E-mail"
             required
